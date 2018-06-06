@@ -12,6 +12,9 @@
 		653816AA20C7078600391F28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 653816A820C7078600391F28 /* Main.storyboard */; };
 		653816AC20C7078700391F28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 653816AB20C7078700391F28 /* Assets.xcassets */; };
 		653816AF20C7078700391F28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 653816AD20C7078700391F28 /* LaunchScreen.storyboard */; };
+		654F6F4B20C70AE2006E7570 /* Joystick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654F6F4A20C70AE2006E7570 /* Joystick.swift */; };
+		654F6F4E20C70D63006E7570 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654F6F4D20C70D63006E7570 /* GameScene.swift */; };
+		6577419920C7208000A9CBE8 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6577419820C7208000A9CBE8 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		653816AB20C7078700391F28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		653816AE20C7078700391F28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		653816B020C7078700391F28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		654F6F4A20C70AE2006E7570 /* Joystick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joystick.swift; sourceTree = "<group>"; };
+		654F6F4D20C70D63006E7570 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		6577419820C7208000A9CBE8 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +61,48 @@
 			isa = PBXGroup;
 			children = (
 				653816A420C7078600391F28 /* AppDelegate.swift */,
-				653816A620C7078600391F28 /* ViewController.swift */,
-				653816A820C7078600391F28 /* Main.storyboard */,
+				6577419820C7208000A9CBE8 /* Utils.swift */,
+				654F6F4920C70AD3006E7570 /* Joystick */,
+				654F6F4C20C70D54006E7570 /* Scenes */,
+				654F6F4820C70AC4006E7570 /* ViewControllers */,
+				654F6F4720C70ABB006E7570 /* Storyboards */,
 				653816AB20C7078700391F28 /* Assets.xcassets */,
-				653816AD20C7078700391F28 /* LaunchScreen.storyboard */,
 				653816B020C7078700391F28 /* Info.plist */,
 			);
 			path = GameStuff;
+			sourceTree = "<group>";
+		};
+		654F6F4720C70ABB006E7570 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				653816A820C7078600391F28 /* Main.storyboard */,
+				653816AD20C7078700391F28 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		654F6F4820C70AC4006E7570 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				653816A620C7078600391F28 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		654F6F4920C70AD3006E7570 /* Joystick */ = {
+			isa = PBXGroup;
+			children = (
+				654F6F4A20C70AE2006E7570 /* Joystick.swift */,
+			);
+			path = Joystick;
+			sourceTree = "<group>";
+		};
+		654F6F4C20C70D54006E7570 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				654F6F4D20C70D63006E7570 /* GameScene.swift */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6577419920C7208000A9CBE8 /* Utils.swift in Sources */,
+				654F6F4B20C70AE2006E7570 /* Joystick.swift in Sources */,
 				653816A720C7078600391F28 /* ViewController.swift in Sources */,
+				654F6F4E20C70D63006E7570 /* GameScene.swift in Sources */,
 				653816A520C7078600391F28 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
